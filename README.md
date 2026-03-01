@@ -3,7 +3,7 @@
 This repo contains the public development for a prototype of an open, easy-to-setup, free science dissemination platform.
 Do not expect stability or extensive documentation until the project will consolidate.
 
-**Live site:** https://open-scholar-nexus.github.io/oaktree-sapling/
+**Live site:** https://impact-scholars.github.io/
 
 The site is automatically deployed to GitHub Pages on every push to the main branch.
 

@@ -3,10 +3,10 @@ extends:
 - nexus.yml
 
 project:
-  id: oaktree-sapling-home
-  title: Oaktree Sapling
+  id: impact-scholars-home
+  title: Impact Scholars
   description: A zero-cost, open-access journal
-  github: https://github.com/Open-Scholar-Nexus/oaktree-sapling
+  github: https://github.com/impact-scholars/impact-scholars.github.io
   open_access: true
   license:
     content: CC-BY-4.0

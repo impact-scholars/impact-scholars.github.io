@@ -44,7 +44,7 @@ Very basic git familiarity is required. For a simple overview, you can read the 
 
 Github templates are like repository recipes. To write your scientific article, we'll use one we prepared; it already contains all the configuration you need, and features a simple sample document for you to have a quick syntax reference. For a more detailed reference, see the [MyST guide](https://mystmd.org/guide/commonmark).
 
-Navigate to https://github.com/Open-Scholar-Nexus/isp-micropublication-template and log in. You'll use the button in the top right labeled "Use this template" to create a new repository in your github account:
+Navigate to https://github.com/impact-scholars/isp-micropublication-template and log in. You'll use the button in the top right labeled "Use this template" to create a new repository in your github account:
 
 ```{figure} ./img/template_top.png
 ```

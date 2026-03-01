@@ -19,8 +19,8 @@ The template repository we prepared for the Impact Scholar Program micropublicat
 
 ```yaml
 extends:
-  - https://raw.githubusercontent.com/Open-Scholar-Nexus/oaktree-sapling/v0.1.0/nexus.yml
-  - https://raw.githubusercontent.com/Open-Scholar-Nexus/oaktree-sapling-config/main/isp-micropublication-2025.yml
+  - https://raw.githubusercontent.com/impact-scholars/impact-scholars.github.io/v0.1.0/nexus.yml
+  - https://raw.githubusercontent.com/impact-scholars/isp-actions-config/main/isp-micropublication-2025.yml
 ```
 
 - **`nexus.yml`**: Provides Scholar Nexus branding and navigation
