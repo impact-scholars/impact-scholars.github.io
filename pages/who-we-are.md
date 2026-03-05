@@ -1,37 +1,35 @@
 ---
 title: Who We Are
-description: About Scholar Nexus and our mission for open science
+description: About the Impact Scholars Program and Neuromatch
 ---
 
 # Who We Are
 
-## Scholar Nexus
+## The Impact Scholars Program
 
-**Scholar Nexus** is a prototype for a new type of scientific journaling platform, built on principles of open science and immediate knowledge dissemination. We're reimagining how scientific research is published, reviewed, and shared in the digital age.
+The **Impact Scholars Program** (ISP) is a six-month, part-time mentored research initiative run by [Neuromatch](https://neuromatch.io). It is designed for early-career computational scientists who have completed a Neuromatch Academy course and want to go further, contributing original research with support from expert mentors.
 
-### Our Vision
+Scholars work in small groups on focused research projects, developing real research competencies and producing citable outputs: micropublications, reports, and code. This gallery is the public record of that work.
 
-Traditional academic publishing operates on outdated models that prioritize gatekeeping over knowledge sharing. Scholar Nexus represents a fundamentally different approach:
+### Research domains
 
-- **Immediate Open Access**: All research is freely accessible to anyone, anywhere
-- **Post-Publication Peer Review**: Real-time community evaluation rather than pre-publication bottlenecks
-- **Open Standards**: Built on open-source technologies to ensure long-term accessibility
-- **Transparent Science**: Making the scientific process visible and collaborative
+ISP projects span the domains taught at Neuromatch Academy:
 
-### Learn More
+- **Computational Neuroscience**
+- **Deep Learning**
+- **NeuroAI**
+- **Computational Tools for Climate Science**
 
-Visit [scholar.nexus](https://scholar.nexus) for more open science.
+### Program values
+
+- **Open science**: all outputs are publicly available and citable
+- **Accessibility**: the program is free to participate in and open to Academy graduates regardless of geography or institutional affiliation
+- **Mentorship**: scholars work directly with domain experts throughout the six months
 
 ---
 
 ## Neuromatch
 
-We're proud to be associated with [Neuromatch](https://neuromatch.io), an organization dedicated to making neuroscience and AI education accessible to everyone, regardless of geography or financial resources.
+[Neuromatch](https://neuromatch.io) is a nonprofit organization dedicated to making computational science education accessible to everyone. Through Neuromatch Academy and associated programs like ISP, it reaches thousands of students and researchers worldwide each year.
 
-Learn more at [neuromatch.io](https://neuromatch.io) and join the movement for accessible, collaborative science.
-
----
-
-## Get Involved
-
-Ready to publish your research with Scholar Nexus? Check out our [submission guidelines](submission-guidelines.md) to get started.
+Learn more at [neuromatch.io](https://neuromatch.io) and [neuromatch.io/impact-scholars-program](https://neuromatch.io/impact-scholars-program/).

@@ -1,66 +1,33 @@
 ---
-title: Submission Guidelines
-description: Guidelines for submitting research to Scholar Nexus
+title: How to Participate
+description: How to apply to the Impact Scholars Program
 ---
 
-# Submission Guidelines
+# How to Participate
 
-> [!WARNING]
-> **Work in Progress** - This page is currently being developed. Check back soon for complete submission guidelines.
+The Impact Scholars Program (ISP) is open to anyone who has successfully completed a Neuromatch Academy course. Applications are reviewed on a rolling basis ahead of each cohort.
 
-## Aims and Goals
-
-Scholar Nexus aims to revolutionize academic publishing by prioritizing openness, speed, and community engagement over traditional gatekeeping models. Our goals are:
-
-### Immediate Dissemination
-We believe research should be accessible the moment it's ready, not months later after anonymous review cycles. Scholar Nexus publishes immediately upon submission, allowing the scientific community to engage with findings in real-time.
-
-### Post-Publication Peer Review
-Rather than relying on a handful of anonymous reviewers before publication, we embrace transparent, community-driven evaluation after publication. This allows for broader scrutiny, more diverse perspectives, and faster iteration on scientific ideas.
-
-### Open Access by Default
-All research published on Scholar Nexus is freely accessible to anyone with an internet connection. We reject the artificial scarcity model that has dominated academic publishing for too long.
-
-### Open Science Standards
-We encourage and support open data, open methods, and reproducible research practices. Science advances faster when the entire process is transparent and collaborative.
-
-Learn more about [our mission and values](who-we-are.md).
+> Full details and the application form are at [neuromatch.io/impact-scholars-program](https://neuromatch.io/impact-scholars-program/).
 
 ---
 
-## How to Submit
+## Eligibility
 
-> [!NOTE]
-> **Coming Soon** - Detailed submission instructions will be added here.
-
-<!-- TODO: Add submission process details -->
-
----
-
-## Formatting Requirements
-
-> [!NOTE]
-> **Coming Soon** - Formatting guidelines and technical requirements will be added here.
-
-<!-- TODO: Add MyST markdown formatting guidelines -->
-<!-- TODO: Add citation format requirements -->
-<!-- TODO: Add figure/data requirements -->
+- You must have completed the most recent Neuromatch Academy course in your chosen domain (passing both tutorials and projects)
+- Teaching Assistants from Academy courses are eligible as equal collaborators
+- You may only apply within the same domain as your Academy course (Computational Neuroscience, Deep Learning, NeuroAI, or Computational Tools for Climate Science)
 
 ---
 
-## Review Process
+## What to expect
 
-> [!NOTE]
-> **Coming Soon** - Information about our post-publication peer review process will be added here.
-
-<!-- TODO: Add timeline expectations -->
-<!-- TODO: Add reviewer guidelines -->
-<!-- TODO: Add community feedback process -->
+- **Duration**: six months, part-time (~5 hours/week minimum)
+- **Structure**: small research groups with expert mentor supervision
+- **Output**: a citable micropublication published openly in this gallery, plus a seminar presentation and public project summary
+- **Cost**: free to participate
 
 ---
 
-## Questions?
+## Interested?
 
-For now, please reach out via [your contact method] with any questions about submissions.
-
-<!-- TODO: Add contact information -->
+Head to [neuromatch.io/impact-scholars-program](https://neuromatch.io/impact-scholars-program/) for the application form, timelines, and any open calls.

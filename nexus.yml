@@ -7,16 +7,18 @@ project:
 site:
   template: book-theme
   nav:
-  - title: Home
+  - title: Gallery
     url: https://impact-scholars.github.io
-  - title: Who We Are
-    url: https://impact-scholars.github.io/who-we-are/
-  - title: Submit
-    url: https://impact-scholars.github.io/submission-guidelines/
+  - title: ISP
+    url: https://impact-scholars.github.io/impact-scholars/
+
   options:
-    favicon: https://raw.githubusercontent.com/impact-scholars/impact-scholars.github.io/v0.1.0/static/logos/logo.png
-    logo: https://raw.githubusercontent.com/impact-scholars/impact-scholars.github.io/v0.1.0/static/logos/logo.png
-    logo_dark: https://raw.githubusercontent.com/impact-scholars/impact-scholars.github.io/v0.1.0/static/logos/logo.png
-    logo_text: Impact Scholars
+    # favicon: ./static/logos/logo-black.svg
+    favicon: https://raw.githubusercontent.com/impact-scholars/impact-scholars.github.io/v0.1.0/static/logos/logo-black.svg
+    # logo: ./static/logos/logo-black.svg
+    # logo_dark: ./static/logos/logo-white.svg
+    logo_text: neuromatch ISP
+    logo: https://raw.githubusercontent.com/impact-scholars/impact-scholars.github.io/v0.1.0/static/logos/logo-black.svg
+    logo_dark: https://raw.githubusercontent.com/impact-scholars/impact-scholars.github.io/v0.1.0/static/logos/logo-white.svg
     logo_url: https://impact-scholars.github.io/
     style: https://raw.githubusercontent.com/impact-scholars/impact-scholars.github.io/v0.1.0/static/custom.css

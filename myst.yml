@@ -4,8 +4,8 @@ extends:
 
 project:
   id: impact-scholars-home
-  title: Impact Scholars
-  description: A zero-cost, open-access journal
+  title: Impact Scholars Gallery
+  description: A gallery of micropublications from the Neuromatch Impact Scholars Program
   github: https://github.com/impact-scholars/impact-scholars.github.io
   open_access: true
   license:
@@ -27,9 +27,7 @@ project:
       file: pages/impact-scholars/impact-scholars-2024.md
     - title: 2023 Edition
       file: pages/impact-scholars/impact-scholars-2023.md
-  - title: Who We Are
-    file: pages/who-we-are.md
-  - title: Submission Guidelines
+  - title: How to Participate
     file: pages/submission-guidelines.md
   - title: Tutorials
     file: pages/tutorials.md

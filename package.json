@@ -1,4 +1,5 @@
 {
+  "name": "impact-scholars-gallery",
   "dependencies": {
     "js-yaml": "^4.1.1"
   }
