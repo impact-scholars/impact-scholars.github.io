@@ -45,3 +45,6 @@ site:
   template: book-theme
   options:
     hide_toc: false
+  parts:
+    footer: static/parts/footer.md
+    primary_sidebar_footer: static/parts/sidebar-footer.md

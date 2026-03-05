@@ -6,6 +6,9 @@ project:
 
 site:
   template: book-theme
+  parts:
+    # primary_sidebar_footer: ./static/parts/sidebar-footer.md
+    primary_sidebar_footer: https://raw.githubusercontent.com/impact-scholars/impact-scholars.github.io/v0.1.0/static/parts/sidebar-footer.md
   nav:
   - title: Gallery
     url: https://impact-scholars.github.io
@@ -13,12 +16,13 @@ site:
     url: https://impact-scholars.github.io/impact-scholars/
 
   options:
-    # favicon: ./static/logos/logo-black.svg
-    favicon: https://raw.githubusercontent.com/impact-scholars/impact-scholars.github.io/v0.1.0/static/logos/logo-black.svg
-    # logo: ./static/logos/logo-black.svg
-    # logo_dark: ./static/logos/logo-white.svg
     logo_text: neuromatch ISP
+    logo_url: https://impact-scholars.github.io/
+    favicon: https://raw.githubusercontent.com/impact-scholars/impact-scholars.github.io/v0.1.0/static/logos/logo-black.svg
     logo: https://raw.githubusercontent.com/impact-scholars/impact-scholars.github.io/v0.1.0/static/logos/logo-black.svg
     logo_dark: https://raw.githubusercontent.com/impact-scholars/impact-scholars.github.io/v0.1.0/static/logos/logo-white.svg
-    logo_url: https://impact-scholars.github.io/
     style: https://raw.githubusercontent.com/impact-scholars/impact-scholars.github.io/v0.1.0/static/custom.css
+    # favicon: ./static/logos/logo-black.svg
+    # logo: ./static/logos/logo-black.svg
+    # logo_dark: ./static/logos/logo-white.svg
+    # style: ./static/custom.css
