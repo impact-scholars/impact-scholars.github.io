@@ -42,6 +42,7 @@
 .dark {
   --color-link:       var(--p-200);
   --color-link-hover: var(--p-50);
+  --color-link-active: var(--p-200);
   --color-muted:      #9998c8;
   --color-active-bg:  #b8b7e840; /* p-200 @ ~25% */
 }
@@ -65,19 +66,19 @@ a.myst-home-link {
 
 /* ── Semantic color rules ──────────────────────────────── */
 
-.link, .hover-link {
+.link, .hover-link, .hover-link:is(.dark *), .link:is(.dark *) {
   color: var(--color-link);
   text-decoration-color: var(--color-link);
 }
 
-.link:hover, .hover-link:hover {
+.link:hover, .hover-link:hover, .hover-link:hover:is(.dark *), .link:hover:is(.dark *)  {
   color: var(--color-link-hover);
   text-decoration-color: var(--color-link-hover);
 }
 
-.hover-link:is(.dark *), .link:is(.dark *) {
-  color: var(--color-link);
-  text-decoration-color: var(--color-link);
+/* unfortunate, but needed */
+.dark\:text-blue-200:is(.dark *) {
+  color: var(--p-200) !important;
 }
 
 /* ── Sidebar footer ─────────────────────────────────────── */
