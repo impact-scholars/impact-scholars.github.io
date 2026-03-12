@@ -79,6 +79,16 @@ a.myst-home-link {
 /* unfortunate, but needed */
 .dark\:text-blue-200:is(.dark *) {
   color: var(--p-200) !important;
+  }
+
+.myst-admonition-header.bg-blue-50 {
+  background-color: var(--p-500) !important;
+}
+
+.dark\:hover\:text-blue-400:hover:is(.dark *),
+.dark\:hover\:border-blue-400:hover:is(.dark *) {
+  color: var(--color-link-hover);
+  border-color: var(--color-link);
 }
 
 /* ── Sidebar footer ─────────────────────────────────────── */
