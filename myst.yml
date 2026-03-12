@@ -42,7 +42,7 @@ project:
       file: pages/tutorials/conda-tutorial.md
 
 site:
-  template: book-theme
+  template: https://github.com/impact-scholars/myst-theme/releases/download/v0.1.0/book-theme.zip
   options:
     hide_toc: false
   parts:
