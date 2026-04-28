@@ -1,63 +1,160 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Inter:wght@400;500&display=swap");
 
-/* ── Palette ────────────────────────────────────────────── */
-/*
-  Neuromatch brand purple scale:
-    p-50   #f0efff   very light purple  (≈ blue-50)
-    p-100  #e0dfff                      (≈ blue-100)
-    p-200  #c5c4f0                      (≈ blue-200)
-    p-400  #8b8ad0                      (≈ blue-400)
-    p-500  #5958b0                      (≈ blue-500)
-    p-600  #44439c   brand purple       (≈ blue-600)
-    p-700  #3a3988                      (≈ blue-700)
-    p-800  #2a2952   deep purple        (≈ blue-800/900)
-    p-900  #1f1e3d   near-black purple  (≈ blue-900)
+/* ── ISP Color Scheme ─────────────────────────────────────
+   Primary purple: #43439e (brand)
+   Accent blue:    #008cbf (teal)
+   Accent red:     #ff7676 (coral)
+   
+   Purple scale for derived values:
+     p-50   #f5f4ff   very light purple
+     p-100  #e8e7ff   light purple
+     p-200  #d1d0f5   medium-light
+     p-300  #a6a5e0   medium
+     p-400  #8b8ad0   lighter (link underline)
+     p-500  #6363be   lighter (hover)
+     p-600  #43439e   brand purple
+     p-700  #343280   darker (link)
+     p-800  #29266a   deep purple (heading)
+     p-900  #1a1840   near-black purple
 */
 
 :root {
-  --myst-color-link: #3a3988;
-  --myst-color-link-hover: #5958b0;
+  /* ── Accent tokens (purple) ──────────────────────────── */
+  --myst-color-primary: #43439e;
+  --myst-color-primary-hover: #343280;
+
+  --myst-color-heading: #29266a;
+
+  --myst-color-link: #343280;
+  --myst-color-link-hover: #6363be;
   --myst-color-link-underline: #8b8ad0;
 
-  --myst-color-active: #44439c;
-  --myst-color-active-bg: #44439c33;
-  --myst-color-active-surface: #f0efff;
+  --myst-color-active: #43439e;
+  --myst-color-active-bg: rgba(67, 67, 158, 0.15);
+  --myst-color-active-surface: #f5f4ff;
 
-  --myst-color-primary: #5958b0;
-  --myst-color-primary-hover: #3a3988;
+  --myst-color-focus-ring: #43439e;
+  --myst-color-focus-outline: #d1d0f5;
 
-  --myst-color-focus-ring: #5958b0;
-  --myst-color-focus-outline: #c5c4f0;
+  --myst-color-accent-surface: #f5f4ff;
+  --myst-color-accent-surface-border: #d1d0f5;
+  --myst-color-accent-surface-text: #1a1840;
 
-  --myst-color-heading: #2a2952;
+  /* ── Neutral tokens (grays) ──────────────────────────── */
+  --myst-color-bg: #ffffff;
+  --myst-color-bg-alt: #f8f9fa;
+  --myst-color-surface: #f1f3f5;
+  --myst-color-surface-hover: #e9ecef;
+  --myst-color-text: #212529;
+  --myst-color-text-secondary: #495057;
+  --myst-color-text-tertiary: #6c757d;
+  --myst-color-border: #dee2e6;
+  --myst-color-border-strong: #ced4da;
 
-  --myst-color-accent-surface: #f0efff;
-  --myst-color-accent-surface-border: #c5c4f0;
-  --myst-color-accent-surface-text: #1f1e3d;
+  /* ── Admonition tokens ───────────────────────────────── */
+  /* Info (teal/blue) */
+  --myst-info: #008cbf;
+  --myst-info-bg: rgba(0, 140, 191, 0.1);
+  --myst-info-text: #005f80;
 
-  --color-muted: #515075;
+  /* Success (green) */
+  --myst-success: #2e7d32;
+  --myst-success-bg: rgba(46, 125, 50, 0.1);
+  --myst-success-text: #1b5e20;
+
+  /* Warning (amber) */
+  --myst-warning: #f9a825;
+  --myst-warning-bg: rgba(249, 168, 37, 0.15);
+  --myst-warning-text: #e65100;
+
+  /* Danger (coral/red) */
+  --myst-danger: #d32f2f;
+  --myst-danger-bg: rgba(255, 118, 118, 0.12);
+  --myst-danger-text: #b71c1c;
+
+  /* Orange */
+  --myst-orange: #e65100;
+  --myst-orange-bg: rgba(230, 81, 0, 0.1);
+  --myst-orange-text: #bf360c;
+
+  /* Purple (brand) */
+  --myst-purple: #43439e;
+  --myst-purple-bg: rgba(67, 67, 158, 0.1);
+  --myst-purple-text: #29266a;
+
+  /* Gray */
+  --myst-gray: #6c757d;
+  --myst-gray-bg: rgba(108, 117, 125, 0.1);
+  --myst-gray-text: #495057;
 }
 
 .dark {
+  /* ── Accent tokens (purple, inverted) ───────────────── */
+  --myst-color-primary: #8b8ad0;
+  --myst-color-primary-hover: #a6a5e0;
+  --myst-color-heading: #e8e7ff;
+
   --myst-color-link: #8b8ad0;
-  --myst-color-link-hover: #a8a7e0;
-  --myst-color-link-underline: #5958b0;
+  --myst-color-link-hover: #a6a5e0;
+  --myst-color-link-underline: #6363be;
 
   --myst-color-active: #8b8ad0;
-  --myst-color-active-bg: #5958b05e;
-  --myst-color-active-surface: #1f1e3d;
-
-  --myst-color-primary: #5958b0;
-  --myst-color-primary-hover: #8b8ad0;
+  --myst-color-active-bg: rgba(139, 138, 208, 0.2);
+  --myst-color-active-surface: #1a1840;
 
   --myst-color-focus-ring: #8b8ad0;
-  --myst-color-focus-outline: #2f2e4d;
+  --myst-color-focus-outline: #343280;
 
-  --myst-color-heading: #e0dfff;
+  --myst-color-accent-surface: #1a184050;
+  --myst-color-accent-surface-border: #29266a;
+  --myst-color-accent-surface-text: #e8e7ff;
 
-  --myst-color-accent-surface: #1f1e3d80;
-  --myst-color-accent-surface-border: #2a2952;
-  --myst-color-accent-surface-text: #f0efff;
+  /* ── Neutral tokens (dark) ────────────────────────────── */
+  --myst-color-bg: #121212;
+  --myst-color-bg-alt: #1a1a2e;
+  --myst-color-surface: #252540;
+  --myst-color-surface-hover: #32325a;
+  --myst-color-text: #e9ecef;
+  --myst-color-text-secondary: #adb5bd;
+  --myst-color-text-tertiary: #868e96;
+  --myst-color-border: #495057;
+  --myst-color-border-strong: #6c757d;
+
+  /* ── Admonition tokens (dark) ────────────────────────── */
+  /* Info */
+  --myst-info: #4db8db;
+  --myst-info-bg: rgba(77, 184, 219, 0.15);
+  --myst-info-text: #4db8db;
+
+  /* Success */
+  --myst-success: #66bb6a;
+  --myst-success-bg: rgba(102, 187, 106, 0.15);
+  --myst-success-text: #81c784;
+
+  /* Warning */
+  --myst-warning: #ffca28;
+  --myst-warning-bg: rgba(255, 202, 40, 0.15);
+  --myst-warning-text: #ffd54f;
+
+  /* Danger */
+  --myst-danger: #ff7676;
+  --myst-danger-bg: rgba(255, 118, 118, 0.15);
+  --myst-danger-text: #ff8a80;
+
+  /* Orange */
+  --myst-orange: #ff9800;
+  --myst-orange-bg: rgba(255, 152, 0, 0.15);
+  --myst-orange-text: #ffb74d;
+
+  /* Purple */
+  --myst-purple: #8b8ad0;
+  --myst-purple-bg: rgba(139, 138, 208, 0.15);
+  --myst-purple-text: #a6a5e0;
+
+  /* Gray */
+  --myst-gray: #adb5bd;
+  --myst-gray-bg: rgba(173, 181, 189, 0.15);
+  --myst-gray-text: #ced4da;
 }
 
 /* ── Typography ─────────────────────────────────────────── */
