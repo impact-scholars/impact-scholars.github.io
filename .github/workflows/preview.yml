@@ -41,7 +41,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy _build/html --project-name=impact-scholars.github.io --branch=${{ github.head_ref }}
+          command: pages deploy _build/html --project-name=impact-scholars --branch=${{ github.head_ref }}
 
       - name: Comment preview URL on PR
         uses: marocchino/sticky-pull-request-comment@v2
