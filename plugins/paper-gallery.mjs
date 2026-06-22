@@ -4,11 +4,40 @@ import { readFileSync } from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
 
-// used for debugging locally
+// Local preview: set NEXUS_LOCAL_PATH to the directory holding the paper repos
+// (e.g. ../isp-repos-to-publish). When set, both configs and thumbnails are read
+// from disk instead of GitHub, so unpushed edits show up in the gallery.
 const LOCAL_PATH = process.env.NEXUS_LOCAL_PATH;
 
 const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/impact-scholars';
 const GITHUB_PAGES_BASE = 'https://impact-scholars.github.io';
+
+// Folder presence is the local/remote switch: a paper checked out under
+// NEXUS_LOCAL_PATH returns its dir, otherwise null (read the published copy).
+async function localCheckout(name) {
+  if (!LOCAL_PATH) return null;
+  const dir = path.join(LOCAL_PATH, name);
+  try {
+    return (await fs.stat(dir)).isDirectory() ? dir : null;
+  } catch (err) {
+    if (err.code === 'ENOENT') return null;
+    throw err;
+  }
+}
+
+// Checked-out papers render a base64 data URI from disk (so unpushed edits show
+// up) and a missing/unreadable thumbnail is fatal; others use the GitHub raw URL.
+async function thumbnailUrl(name) {
+  const dir = await localCheckout(name);
+  if (!dir) return `${GITHUB_RAW_BASE}/${name}/main/thumbnails/thumbnail.png`;
+  const file = path.join(dir, 'thumbnails', 'thumbnail.png');
+  try {
+    const data = await fs.readFile(file);
+    return `data:image/png;base64,${data.toString('base64')}`;
+  } catch (err) {
+    throw new Error(`"${name}" is checked out locally but its thumbnail is missing or unreadable (${file}): ${err.message}`);
+  }
+}
 
 function parsePapers() {
   const lines = readFileSync('papers.txt', 'utf8').split('\n');
@@ -27,19 +56,19 @@ function parsePapers() {
   return papers;
 }
 
-async function fetchPaperConfig(name) {
-  if (LOCAL_PATH) {
-    const configPath = path.join(LOCAL_PATH, name, 'myst.yml');
-    const content = await fs.readFile(configPath, 'utf8');
-    return yaml.load(content);
-  } else {
-    const url = `${GITHUB_RAW_BASE}/${name}/main/myst.yml`;
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Failed to fetch config for "${name}": ${response.status} ${response.statusText}`);
-    }
-    return yaml.load(await response.text());
+async function fetchRemoteConfig(name) {
+  const url = `${GITHUB_RAW_BASE}/${name}/main/myst.yml`;
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Failed to fetch config for "${name}": ${response.status} ${response.statusText}`);
   }
+  return yaml.load(await response.text());
+}
+
+async function fetchPaperConfig(name) {
+  const dir = await localCheckout(name);
+  if (dir) return yaml.load(await fs.readFile(path.join(dir, 'myst.yml'), 'utf8'));
+  return fetchRemoteConfig(name);
 }
 
 const paperCardsDirective = {
@@ -87,7 +116,7 @@ function paperCardsTransform(opts, utils) {
           { type: 'header', children: [{ type: 'text', value: title }] },
           {
             type: 'image',
-            url: `${GITHUB_RAW_BASE}/${node.name}/main/thumbnails/thumbnail.png`,
+            url: await thumbnailUrl(node.name),
             alt: title,
             width: '100%',
           },
