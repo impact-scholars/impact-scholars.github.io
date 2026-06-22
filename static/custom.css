@@ -23,7 +23,7 @@
   --myst-color-primary: #43439e;
   --myst-color-primary-hover: #343280;
 
-  --myst-color-heading: #29266a;
+  --myst-color-accent-text: #29266a;
 
   --myst-color-link: #343280;
   --myst-color-link-hover: #6363be;
@@ -42,7 +42,7 @@
 
   /* ── Neutral tokens (grays) ──────────────────────────── */
   --myst-color-bg: #ffffff;
-  --myst-color-bg-alt: #f8f9fa;
+  --myst-color-bg-secondary: #f8f9fa;
   --myst-color-surface: #f1f3f5;
   --myst-color-surface-hover: #e9ecef;
   --myst-color-text: #212529;
@@ -92,7 +92,7 @@
   /* ── Accent tokens (purple, inverted) ───────────────── */
   --myst-color-primary: #8b8ad0;
   --myst-color-primary-hover: #a6a5e0;
-  --myst-color-heading: #e8e7ff;
+  --myst-color-accent-text: #e8e7ff;
 
   --myst-color-link: #8b8ad0;
   --myst-color-link-hover: #a6a5e0;
@@ -111,7 +111,7 @@
 
   /* ── Neutral tokens (dark) ────────────────────────────── */
   --myst-color-bg: #121212;
-  --myst-color-bg-alt: #1a1a2e;
+  --myst-color-bg-secondary: #1a1a2e;
   --myst-color-surface: #252540;
   --myst-color-surface-hover: #32325a;
   --myst-color-text: #e9ecef;
