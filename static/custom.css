@@ -23,7 +23,7 @@
   --myst-color-primary: #43439e;
   --myst-color-primary-hover: #343280;
 
-  --myst-color-heading: #29266a;
+  --myst-color-accent-text: #29266a;
 
   --myst-color-link: #343280;
   --myst-color-link-hover: #6363be;
@@ -42,7 +42,7 @@
 
   /* ── Neutral tokens (grays) ──────────────────────────── */
   --myst-color-bg: #ffffff;
-  --myst-color-bg-alt: #f8f9fa;
+  --myst-color-bg-secondary: #f8f9fa;
   --myst-color-surface: #f1f3f5;
   --myst-color-surface-hover: #e9ecef;
   --myst-color-text: #212529;
@@ -53,46 +53,46 @@
 
   /* ── Admonition tokens ───────────────────────────────── */
   /* Info (teal/blue) */
-  --myst-info: #008cbf;
-  --myst-info-bg: rgba(0, 140, 191, 0.1);
-  --myst-info-text: #005f80;
+  --myst-color-info: #008cbf;
+  --myst-color-info-bg: rgba(0, 140, 191, 0.1);
+  --myst-color-info-text: #005f80;
 
   /* Success (green) */
-  --myst-success: #2e7d32;
-  --myst-success-bg: rgba(46, 125, 50, 0.1);
-  --myst-success-text: #1b5e20;
+  --myst-color-success: #2e7d32;
+  --myst-color-success-bg: rgba(46, 125, 50, 0.1);
+  --myst-color-success-text: #1b5e20;
 
   /* Warning (amber) */
-  --myst-warning: #f9a825;
-  --myst-warning-bg: rgba(249, 168, 37, 0.15);
-  --myst-warning-text: #e65100;
+  --myst-color-warning: #f9a825;
+  --myst-color-warning-bg: rgba(249, 168, 37, 0.15);
+  --myst-color-warning-text: #e65100;
 
   /* Danger (coral/red) */
-  --myst-danger: #d32f2f;
-  --myst-danger-bg: rgba(255, 118, 118, 0.12);
-  --myst-danger-text: #b71c1c;
+  --myst-color-danger: #d32f2f;
+  --myst-color-danger-bg: rgba(255, 118, 118, 0.12);
+  --myst-color-danger-text: #b71c1c;
 
   /* Orange */
-  --myst-orange: #e65100;
-  --myst-orange-bg: rgba(230, 81, 0, 0.1);
-  --myst-orange-text: #bf360c;
+  --myst-color-orange: #e65100;
+  --myst-color-orange-bg: rgba(230, 81, 0, 0.1);
+  --myst-color-orange-text: #bf360c;
 
   /* Purple (brand) */
-  --myst-purple: #43439e;
-  --myst-purple-bg: rgba(67, 67, 158, 0.1);
-  --myst-purple-text: #29266a;
+  --myst-color-purple: #43439e;
+  --myst-color-purple-bg: rgba(67, 67, 158, 0.1);
+  --myst-color-purple-text: #29266a;
 
   /* Gray */
-  --myst-gray: #6c757d;
-  --myst-gray-bg: rgba(108, 117, 125, 0.1);
-  --myst-gray-text: #495057;
+  --myst-color-gray: #6c757d;
+  --myst-color-gray-bg: rgba(108, 117, 125, 0.1);
+  --myst-color-gray-text: #495057;
 }
 
 .dark {
   /* ── Accent tokens (purple, inverted) ───────────────── */
   --myst-color-primary: #8b8ad0;
   --myst-color-primary-hover: #a6a5e0;
-  --myst-color-heading: #e8e7ff;
+  --myst-color-accent-text: #e8e7ff;
 
   --myst-color-link: #8b8ad0;
   --myst-color-link-hover: #a6a5e0;
@@ -111,7 +111,7 @@
 
   /* ── Neutral tokens (dark) ────────────────────────────── */
   --myst-color-bg: #121212;
-  --myst-color-bg-alt: #1a1a2e;
+  --myst-color-bg-secondary: #1a1a2e;
   --myst-color-surface: #252540;
   --myst-color-surface-hover: #32325a;
   --myst-color-text: #e9ecef;
@@ -122,39 +122,39 @@
 
   /* ── Admonition tokens (dark) ────────────────────────── */
   /* Info */
-  --myst-info: #4db8db;
-  --myst-info-bg: rgba(77, 184, 219, 0.15);
-  --myst-info-text: #4db8db;
+  --myst-color-info: #4db8db;
+  --myst-color-info-bg: rgba(77, 184, 219, 0.15);
+  --myst-color-info-text: #4db8db;
 
   /* Success */
-  --myst-success: #66bb6a;
-  --myst-success-bg: rgba(102, 187, 106, 0.15);
-  --myst-success-text: #81c784;
+  --myst-color-success: #66bb6a;
+  --myst-color-success-bg: rgba(102, 187, 106, 0.15);
+  --myst-color-success-text: #81c784;
 
   /* Warning */
-  --myst-warning: #ffca28;
-  --myst-warning-bg: rgba(255, 202, 40, 0.15);
-  --myst-warning-text: #ffd54f;
+  --myst-color-warning: #ffca28;
+  --myst-color-warning-bg: rgba(255, 202, 40, 0.15);
+  --myst-color-warning-text: #ffd54f;
 
   /* Danger */
-  --myst-danger: #ff7676;
-  --myst-danger-bg: rgba(255, 118, 118, 0.15);
-  --myst-danger-text: #ff8a80;
+  --myst-color-danger: #ff7676;
+  --myst-color-danger-bg: rgba(255, 118, 118, 0.15);
+  --myst-color-danger-text: #ff8a80;
 
   /* Orange */
-  --myst-orange: #ff9800;
-  --myst-orange-bg: rgba(255, 152, 0, 0.15);
-  --myst-orange-text: #ffb74d;
+  --myst-color-orange: #ff9800;
+  --myst-color-orange-bg: rgba(255, 152, 0, 0.15);
+  --myst-color-orange-text: #ffb74d;
 
   /* Purple */
-  --myst-purple: #8b8ad0;
-  --myst-purple-bg: rgba(139, 138, 208, 0.15);
-  --myst-purple-text: #a6a5e0;
+  --myst-color-purple: #8b8ad0;
+  --myst-color-purple-bg: rgba(139, 138, 208, 0.15);
+  --myst-color-purple-text: #a6a5e0;
 
   /* Gray */
-  --myst-gray: #adb5bd;
-  --myst-gray-bg: rgba(173, 181, 189, 0.15);
-  --myst-gray-text: #ced4da;
+  --myst-color-gray: #adb5bd;
+  --myst-color-gray-bg: rgba(173, 181, 189, 0.15);
+  --myst-color-gray-text: #ced4da;
 }
 
 /* ── Typography ─────────────────────────────────────────── */
