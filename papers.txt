@@ -1,4 +1,15 @@
 # 2025
+2026-longitudinal-subtyping-ppmi
+2026-teacher-residuals-recovery
+geetha-2026-pd-connectivity-analysis
+karalasingham-2026-nmap-celegans
+lai-2026-perceptualhmm
+lindner-2026-ouaga-urban-heat-drivers
+madrid-carvajal-2026-reward-shapes-geometry
+suheylgulenc-2026-brainwide-intrinsic-timescales
+tahiri-2026-working-memory-model
+vega-jacome-2026-peru-compound-extremes
+yegarmina-2026-coupling-predict-choice
 
 # 2024
 
