@@ -10,7 +10,6 @@ suheylgulenc-2026-brainwide-intrinsic-timescales
 tahiri-2026-working-memory-model
 vega-jacome-2026-peru-compound-extremes
 yegarmina-2026-coupling-predict-choice
-yilmaz-2026-connectivity-memory-load
 
 # 2024
 
