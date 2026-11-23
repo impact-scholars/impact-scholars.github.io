@@ -188,3 +188,20 @@ a.myst-home-link {
 .myst-primary-sidebar-footer {
   font-size: 0.8rem;
 }
+
+/* ── Landing page (pages/index.md) ──────────────────────── */
+
+.landing-hero .myst-landing-split-img-image img {
+  object-fit: contain;
+  padding: 3rem;
+}
+.landing-hero .myst-landing-split-img-content-wrapper {
+  padding-bottom: 2rem;
+}
+.landing-editions .myst-landing-centered-inner {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.landing-latest .myst-landing-justified {
+  padding-top: 2rem;
+}
