@@ -195,6 +195,25 @@ a.myst-home-link {
   object-fit: contain;
   padding: 3rem;
 }
+/* The theme paints the hero dark with inverted text; match the rest of the page. */
+.landing-hero .myst-landing-split-img {
+  background: var(--myst-color-bg);
+}
+.landing-hero .myst-landing-split-img-heading {
+  color: var(--myst-color-text);
+}
+.landing-hero .myst-landing-split-img-subtitle {
+  color: var(--myst-color-primary);
+}
+.landing-hero p.prose-invert {
+  color: var(--myst-color-text-secondary);
+}
+/* Thumbnails come in any shape; crop them to one so the cards line up. */
+.landing-latest .myst-card img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: top;
+}
 .landing-hero .myst-landing-split-img-content-wrapper {
   padding-bottom: 2rem;
 }

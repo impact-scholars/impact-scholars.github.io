@@ -17,7 +17,7 @@ Research papers from Neuromatch's six-month mentored research program, open to r
 
 ![The Impact Scholars Program logo.](../static/logos/logo-watermark.svg)
 
-{button}`Latest edition <impact-scholars/impact-scholars-2025.md>` [About the program](impact-scholars.md)
+{button}`Latest edition <impact-scholars/impact-scholars-2025.md>` {button}`About the program <impact-scholars.md>`
 
 +++ {"kind": "centered", "class": "landing-editions"}
 
@@ -47,6 +47,7 @@ Latest papers
 
 ::: {paper-cards}
 :subset: 2025
+:limit: 3
 :::
 
 +++ {"kind": "justified", "class": "landing-join"}
