@@ -209,6 +209,10 @@ a.myst-home-link {
 .landing-hero p.prose-invert {
   color: var(--myst-color-text-secondary);
 }
+/* Landing links go straight to their page, with no hover preview. */
+body:has(.landing-hero) .hover-card-content {
+  display: none;
+}
 /* Thumbnails come in any shape; crop them to one so the cards line up. */
 .landing-latest .myst-card img {
   aspect-ratio: 4 / 3;
