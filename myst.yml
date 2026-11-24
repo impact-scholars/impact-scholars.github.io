@@ -45,6 +45,7 @@ site:
   options:
     hide_toc: false
     style: static/custom.css
+    favicon: static/logos/favicon.ico
   parts:
     footer: static/parts/footer.md
     primary_sidebar_footer: static/parts/sidebar-footer.md
