@@ -42,7 +42,6 @@ project:
       file: pages/tutorials/conda-tutorial.md
 
 site:
-  template: https://github.com/jupyter-book/myst-theme/releases/download/myst-to-react%402.1.1/book-theme.zip
   options:
     hide_toc: false
     style: static/custom.css
