@@ -196,19 +196,6 @@ a.myst-home-link {
   object-fit: contain;
   padding: 3rem;
 }
-/* The theme paints the hero dark with inverted text; match the rest of the page. */
-.landing-hero .myst-landing-split-img {
-  background: var(--myst-color-bg);
-}
-.landing-hero .myst-landing-split-img-heading {
-  color: var(--myst-color-text);
-}
-.landing-hero .myst-landing-split-img-subtitle {
-  color: var(--myst-color-active);
-}
-.landing-hero p.prose-invert {
-  color: var(--myst-color-text-secondary);
-}
 /* Landing links go straight to their page, with no hover preview. */
 body:has(.landing-hero) .hover-card-content {
   display: none;
