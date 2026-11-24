@@ -16,6 +16,7 @@ site:
     url: https://impact-scholars.github.io/impact-scholars/
 
   options:
+    hide_breadcrumbs: true
     logo_text: neuromatch ISP
     logo_url: https://impact-scholars.github.io/
     favicon: https://raw.githubusercontent.com/impact-scholars/impact-scholars.github.io/v0.2.0/static/logos/favicon.ico
