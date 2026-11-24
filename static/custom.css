@@ -90,8 +90,9 @@
 
 .dark {
   /* ── Accent tokens (purple, inverted) ───────────────── */
-  --myst-color-primary: #8b8ad0;
-  --myst-color-primary-hover: #a6a5e0;
+  /* Primary only fills buttons behind white text, so it stays dark. */
+  --myst-color-primary: #43439e;
+  --myst-color-primary-hover: #5b5aa6;
   --myst-color-accent-text: #e8e7ff;
 
   --myst-color-link: #8b8ad0;
@@ -203,7 +204,7 @@ a.myst-home-link {
   color: var(--myst-color-text);
 }
 .landing-hero .myst-landing-split-img-subtitle {
-  color: var(--myst-color-primary);
+  color: var(--myst-color-active);
 }
 .landing-hero p.prose-invert {
   color: var(--myst-color-text-secondary);
