@@ -45,7 +45,6 @@ site:
   template: https://github.com/impact-scholars/myst-theme/releases/download/v0.2.0/book-theme.zip
   options:
     hide_toc: false
-    # Local while the landing page is a draft; nexus.yml points papers at the published copy.
     style: static/custom.css
   parts:
     footer: static/parts/footer.md
