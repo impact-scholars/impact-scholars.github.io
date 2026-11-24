@@ -144,12 +144,7 @@
 
 /* ── Typography ─────────────────────────────────────────── */
 
-body,
-p,
-li,
-td,
-th,
-blockquote {
+body {
   font-family: "Inter", sans-serif;
 }
 
