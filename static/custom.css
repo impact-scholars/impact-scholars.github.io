@@ -1,22 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Inter:wght@400;500&display=swap");
 
-/* ── ISP Color Scheme ─────────────────────────────────────
-   Primary purple: #43439e (brand)
-   Accent blue:    #008cbf (teal)
-   Accent red:     #ff7676 (coral)
-   
-   Purple scale for derived values:
-     p-50   #f5f4ff   very light purple
-     p-100  #e8e7ff   light purple
-     p-200  #d1d0f5   medium-light
-     p-300  #a6a5e0   medium
-     p-400  #8b8ad0   lighter (link underline)
-     p-500  #6363be   lighter (hover)
-     p-600  #43439e   brand purple
-     p-700  #343280   darker (link)
-     p-800  #29266a   deep purple (heading)
-     p-900  #1a1840   near-black purple
-*/
+/* ── ISP Color Scheme ───────────────────────────────────── */
 
 :root {
   /* ── Accent tokens (purple) ──────────────────────────── */
@@ -160,12 +144,7 @@
 
 /* ── Typography ─────────────────────────────────────────── */
 
-body,
-p,
-li,
-td,
-th,
-blockquote {
+body {
   font-family: "Inter", sans-serif;
 }
 
@@ -180,7 +159,6 @@ h6,
 }
 
 a.myst-home-link {
-  font-family: "Rubik", sans-serif;
   font-weight: 500;
 }
 
