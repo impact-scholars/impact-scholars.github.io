@@ -90,8 +90,9 @@
 
 .dark {
   /* ── Accent tokens (purple, inverted) ───────────────── */
-  --myst-color-primary: #8b8ad0;
-  --myst-color-primary-hover: #a6a5e0;
+  /* Primary only fills buttons behind white text, so it stays dark. */
+  --myst-color-primary: #43439e;
+  --myst-color-primary-hover: #5b5aa6;
   --myst-color-accent-text: #e8e7ff;
 
   --myst-color-link: #8b8ad0;
@@ -187,4 +188,44 @@ a.myst-home-link {
 
 .myst-primary-sidebar-footer {
   font-size: 0.8rem;
+}
+
+/* ── Landing page (pages/index.md) ──────────────────────── */
+
+.landing-hero .myst-landing-split-img-image img {
+  object-fit: contain;
+  padding: 3rem;
+}
+/* The theme paints the hero dark with inverted text; match the rest of the page. */
+.landing-hero .myst-landing-split-img {
+  background: var(--myst-color-bg);
+}
+.landing-hero .myst-landing-split-img-heading {
+  color: var(--myst-color-text);
+}
+.landing-hero .myst-landing-split-img-subtitle {
+  color: var(--myst-color-active);
+}
+.landing-hero p.prose-invert {
+  color: var(--myst-color-text-secondary);
+}
+/* Landing links go straight to their page, with no hover preview. */
+body:has(.landing-hero) .hover-card-content {
+  display: none;
+}
+/* Thumbnails come in any shape; crop them to one so the cards line up. */
+.landing-latest .myst-card img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: top;
+}
+.landing-hero .myst-landing-split-img-content-wrapper {
+  padding-bottom: 2rem;
+}
+.landing-editions .myst-landing-centered-inner {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.landing-latest .myst-landing-justified {
+  padding-top: 2rem;
 }

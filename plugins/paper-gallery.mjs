@@ -76,10 +76,14 @@ const paperCardsDirective = {
   doc: 'Generate a gallery of paper cards',
   options: {
     subset: { type: String, doc: 'Filter by year' },
+    limit: { type: Number, doc: 'Show only the first N papers' },
   },
   run(data) {
     const subset = data.options?.subset;
-    const papers = parsePapers().filter(p => !subset || p.year === subset);
+    const limit = data.options?.limit;
+    const papers = parsePapers()
+      .filter(p => !subset || p.year === subset)
+      .slice(0, limit ?? Infinity);
     console.log(`paper-cards: subset=${subset}, found ${papers.length} papers`);
 
     if (papers.length === 0) {
